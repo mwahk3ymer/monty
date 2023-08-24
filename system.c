@@ -45,7 +45,7 @@ instruction_t *create_instru()
 	ptr[9].opcode = "mul", ptr[9].f = mul;
 	ptr[10].opcode = "mod", ptr[10].f = mod;
 	ptr[11].opcode = "_pchar", ptr[11].f = _pchar;
-	ptr[12].opcode = "pstr", ptr[12].f = pstr;
+	ptr[12].opcode = "_pstr", ptr[12].f = _pstr;
 
 
 	ptr[15].opcode = "stack", ptr[15].f = stack;
