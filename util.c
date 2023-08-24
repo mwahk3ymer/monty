@@ -40,7 +40,7 @@ instruction_t *create_instru()
 	ptr[4].opcode = "swap", ptr[4].f = swap;
 	ptr[5].opcode = "add", ptr[5].f = add;
 	ptr[6].opcode = "nop", ptr[6].f = NULL;
-	ptr[7].opcode = "sub", ptr[7].f = sub;
+
 	ptr[8].opcode = "div", ptr[8].f = divi;
 	ptr[9].opcode = "mul", ptr[9].f = mul;
 	ptr[10].opcode = "mod", ptr[10].f = mod;
