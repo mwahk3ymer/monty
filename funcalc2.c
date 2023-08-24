@@ -67,11 +67,11 @@ void _pchar(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * _pstr - s
+ * pstr - s
  * @stack: Double linked list
  * @line_number: File line execution
  */
-void _pstr(stack_t **stack, unsigned int line_number)
+void pstr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = *stack;
 	(void) line_number;
