@@ -46,8 +46,13 @@ instruction_t *create_instru()
 	ptr[10].opcode = "mod", ptr[10].f = mod;
 	ptr[11].opcode = "pchar", ptr[11].f = pchar;
 	ptr[12].opcode = "pstr", ptr[12].f = pstr;
+<<<<<<< HEAD
 	ptr[13].opcode = "rotl", ptr[13].f = rotl;
 
+=======
+
+	ptr[14].opcode = "rotr", ptr[14].f = rotr;
+>>>>>>> 28493d18f292c3689e827d212d3088dd9a180b7e
 	ptr[15].opcode = "stack", ptr[15].f = stack;
 	ptr[16].opcode = "queue", ptr[16].f = queue;
 	ptr[17].opcode = NULL, ptr[17].f = NULL;
