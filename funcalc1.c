@@ -1,17 +1,17 @@
 #include "monty.h"
 
 /**
- * _swap - Delete top of list
+ * swap - Delete top of list
  * @stack: Double linked list
  * @line_number: File line execution
  */
-void _swap(stack_t **stack, unsigned int line_number)
+void swap(stack_t **stack, unsigned int line_number)
 {
 	int tmp;
 
 	if (!*stack || !(*stack)->next)
 	{
-		fprintf(stderr, "L%u: can't _swap, stack too short\n",
+		fprintf(stderr, "L%u: can't swap, stack too short\n",
 			line_number);
 		free_all();
 		exit(EXIT_FAILURE);
@@ -36,5 +36,5 @@ void add(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	(*stack)->next->n = (*stack)->next->n + (*stack)->n;
-	_pop(stack, line_number);
+	pop(stack, line_number);
 }
