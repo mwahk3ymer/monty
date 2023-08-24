@@ -80,15 +80,15 @@ int _isdigit(char *string);
 /* ================================================================= */
 /* op_funct.c */
 /* ================================================================= */
-void pall(stack_t **stack, unsigned int line_number);
+void _pall(stack_t **stack, unsigned int line_number);
 void push(stack_t **stack, unsigned int line_number);
-void pint(stack_t **stack, unsigned int line_number);
-void pop(stack_t **stack, unsigned int line_number);
+void _pint(stack_t **stack, unsigned int line_number);
+void _pop(stack_t **stack, unsigned int line_number);
 
 /* ================================================================= */
 /* op_funct_2.c */
 /* ================================================================= */
-void swap(stack_t **stack, unsigned int line_number);
+void _swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
 void divi(stack_t **stack, unsigned int line_number);
@@ -98,8 +98,8 @@ void divi(stack_t **stack, unsigned int line_number);
 /* ================================================================= */
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
-void pchar(stack_t **stack, unsigned int line_number);
-void pstr(stack_t **stack, unsigned int line_number);
+void _pchar(stack_t **stack, unsigned int line_number);
+void _pstr(stack_t **stack, unsigned int line_number);
 
 /* ================================================================= */
 /* op_funct_4.c */

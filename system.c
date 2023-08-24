@@ -33,19 +33,19 @@ instruction_t *create_instru()
 		fprintf(stderr, "Error: malloc failed\n");
 		return (NULL);
 	}
-	ptr[0].opcode = "pall", ptr[0].f = pall;
+	ptr[0].opcode = "_pall", ptr[0].f = _pall;
 	ptr[1].opcode = "push", ptr[1].f = push;
-	ptr[2].opcode = "pint", ptr[2].f = pint;
-	ptr[3].opcode = "pop", ptr[3].f = pop;
-	ptr[4].opcode = "swap", ptr[4].f = swap;
+	ptr[2].opcode = "_pint", ptr[2].f = _pint;
+	ptr[3].opcode = "_pop", ptr[3].f = _pop;
+	ptr[4].opcode = "_swap", ptr[4].f = _swap;
 	ptr[5].opcode = "add", ptr[5].f = add;
 	ptr[6].opcode = "nop", ptr[6].f = NULL;
 
 
 	ptr[9].opcode = "mul", ptr[9].f = mul;
 	ptr[10].opcode = "mod", ptr[10].f = mod;
-	ptr[11].opcode = "pchar", ptr[11].f = pchar;
-	ptr[12].opcode = "pstr", ptr[12].f = pstr;
+	ptr[11].opcode = "_pchar", ptr[11].f = _pchar;
+	ptr[12].opcode = "_pstr", ptr[12].f = _pstr;
 
 
 	ptr[15].opcode = "stack", ptr[15].f = stack;

@@ -1,10 +1,10 @@
 #include "monty.h"
 /**
- * pall - Print list
+ * _pall - Print list
  * @stack: Double linked list
  * @line_number: File line execution
  */
-void pall(stack_t **stack, unsigned int line_number)
+void _pall(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = *stack;
 	(void) line_number;
@@ -62,15 +62,15 @@ void push(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pint - Print last node
+ * _pint - Print last node
  * @stack: Double linked list
  * @line_number: File line execution
  */
-void pint(stack_t **stack, unsigned int line_number)
+void _pint(stack_t **stack, unsigned int line_number)
 {
 	if (!*stack)
 	{
-		fprintf(stderr, "L%u: can't pint, stack empty\n", line_number);
+		fprintf(stderr, "L%u: can't _pint, stack empty\n", line_number);
 		free_all();
 		exit(EXIT_FAILURE);
 	}
@@ -78,17 +78,17 @@ void pint(stack_t **stack, unsigned int line_number)
 }
 
 /**
-* pop - Delete top of list
+* _pop - Delete top of list
 * @stack: Double linked list
 * @line_number: File line execution
 */
-void pop(stack_t **stack, unsigned int line_number)
+void _pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp;
 
 	if (!*stack)
 	{
-		fprintf(stderr, "L%u: can't pop an empty stack\n", line_number);
+		fprintf(stderr, "L%u: can't _pop an empty stack\n", line_number);
 		free_all();
 		exit(EXIT_FAILURE);
 	}
