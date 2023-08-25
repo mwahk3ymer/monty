@@ -107,11 +107,11 @@ void free_all(void)
 }
 
 /**
- * _isdigit - Clean all program mallocs
+ * _isanumeral - Clean all program mallocs
  * @string: Num to validate
  * Return: 0 Success, 1 Failed
  */
-int _isdigit(char *string)
+int _isanumeral(char *string)
 {
 	int i;
 

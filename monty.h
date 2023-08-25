@@ -75,7 +75,7 @@ int beg_var(vars *var);
 instruction_t *_forminstruct();
 int _invokefunc(vars *var, char *opcode);
 void free_all(void);
-int _isdigit(char *string);
+int _isanumeral(char *string);
 
 /* ================================================================= */
 /* op_funct.c */
