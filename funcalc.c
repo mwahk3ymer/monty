@@ -32,14 +32,14 @@ void push(stack_t **stack, unsigned int line_number)
 	if (num == NULL || (_isanumeral(num) != 0 && num[0] != '-'))
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
-		free_all();
+		_freeall();
 		exit(EXIT_FAILURE);
 	}
 	tmp = malloc(sizeof(stack_t));
 	if (!tmp)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
-		free_all();
+		_freeall();
 		exit(EXIT_FAILURE);
 	}
 	tmp->n = atoi(num);
@@ -71,7 +71,7 @@ void pint(stack_t **stack, unsigned int line_number)
 	if (!*stack)
 	{
 		fprintf(stderr, "L%u: can't pint, stack empty\n", line_number);
-		free_all();
+		_freeall();
 		exit(EXIT_FAILURE);
 	}
 	printf("%d\n", (*stack)->n);
@@ -89,7 +89,7 @@ void pop(stack_t **stack, unsigned int line_number)
 	if (!*stack)
 	{
 		fprintf(stderr, "L%u: can't pop an empty stack\n", line_number);
-		free_all();
+		_freeall();
 		exit(EXIT_FAILURE);
 	}
 

@@ -85,10 +85,10 @@ int _invokefunc(vars *var, char *opcode)
 
 
 /**
- * free_all - Clean all program mallocs
+ * _freeall - Clean all program mallocs
  * Return: None
  */
-void free_all(void)
+void _freeall(void)
 {
 	if (var.buff != NULL)
 		free(var.buff);

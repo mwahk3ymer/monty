@@ -74,7 +74,7 @@ extern vars var;
 int beg_var(vars *var);
 instruction_t *_forminstruct();
 int _invokefunc(vars *var, char *opcode);
-void free_all(void);
+void _freeall(void);
 int _isanumeral(char *string);
 
 /* ================================================================= */

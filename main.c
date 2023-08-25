@@ -25,7 +25,7 @@ int main(int ac, char **av)
 	if (!var.file)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", av[1]);
-		free_all();
+		_freeall();
 		return (EXIT_FAILURE);
 	}
 
@@ -35,13 +35,13 @@ int main(int ac, char **av)
 		if (opcode != NULL)
 			if (_invokefunc(&var, opcode) == EXIT_FAILURE)
 			{
-				free_all();
+				_freeall();
 				return (EXIT_FAILURE);
 			}
 		var.line_number++;
 	}
 
-	free_all();
+	_freeall();
 
 	return (EXIT_SUCCESS);
 }
