@@ -18,7 +18,7 @@ int main(int ac, char **av)
 		return (EXIT_FAILURE);
 	}
 
-	if (start_vars(&var) != 0)
+	if (beg_var(&var) != 0)
 		return (EXIT_FAILURE);
 
 	var.file = fopen(av[1], "r");

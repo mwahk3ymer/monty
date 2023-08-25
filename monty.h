@@ -71,7 +71,7 @@ extern vars var;
 /* ================================================================= */
 /* man_file.c */
 /* ================================================================= */
-int start_vars(vars *var);
+int beg_var(vars *var);
 instruction_t *create_instru();
 int call_funct(vars *var, char *opcode);
 void free_all(void);
