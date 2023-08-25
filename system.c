@@ -2,7 +2,7 @@
 
 /**
  * beg_var - Fake rand to jackpoint Giga Millions
- * @var: Global variables to initialize
+ * @var: Global vars to initialize
  * Return: 0 Success, 1 Failed
  */
 int beg_var(vars *var)
@@ -21,8 +21,8 @@ int beg_var(vars *var)
 }
 
 /**
- * _forminstruct - Create new functions dictionary
- * Return: Dictionary pointer
+ * _forminstruct - Create new funns dictionary
+ * Return: Dictionary given pointer
  */
 instruction_t *_forminstruct()
 {
@@ -56,7 +56,7 @@ instruction_t *_forminstruct()
 }
 
 /**
- * _invokefunc - Call Functions
+ * _invokefunc - Call certain Functions
  * @var: Global variables
  * @opcode: Command to execute
  * Return: None
@@ -85,7 +85,7 @@ int _invokefunc(vars *var, char *opcode)
 
 
 /**
- * _freeall - Clean all program mallocs
+ * _freeall - Clean all given program mallocs
  * Return: None
  */
 void _freeall(void)
@@ -107,7 +107,7 @@ void _freeall(void)
 }
 
 /**
- * _isanumeral - Clean all program mallocs
+ * _isanumeral - Cleans all given program mallocs
  * @string: Num to validate
  * Return: 0 Success, 1 Failed
  */

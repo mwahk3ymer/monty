@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * mul - s
+ * mul - so it does
  * @stack: Double linked list
  * @line_number: File line execution
  */
@@ -20,7 +20,7 @@ void mul(stack_t **stack, unsigned int line_number)
 
 
 /**
- * mod - s
+ * mod - so it does
  * @stack: Double linked list
  * @line_number: File line execution
  */
@@ -44,7 +44,7 @@ void mod(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pchar - s
+ * pchar - so it does
  * @stack: Double linked list
  * @line_number: File line execution
  */
@@ -67,7 +67,7 @@ void pchar(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pstr - s
+ * pstr - so it does
  * @stack: Double linked list
  * @line_number: File line execution
  */

@@ -14,13 +14,12 @@
 #define Buffsize 30
 
 /**
- * struct stack_s - Doubly linked list representation of a stack (or queue)
+ * struct stack_s - Doubly lst tation of a stack (or queue)
  * @n: Integer
- * @prev: Points to the previous element of the stack (or queue)
- * @next: Points to the next element of the stack (or queue)
+ * @prev: Points to the prev element of the stack (or queue)
+ * @next: Points to the next elem stack (or queue)
  *
  * Description: Doubly linked list node structure
- * for stack, queues, LIFO, FIFO
  */
 typedef struct stack_s
 {
@@ -35,7 +34,6 @@ typedef struct stack_s
  * @f: function to handle the opcode
  *
  * Description: opcode and its function
- * for stack, queues, LIFO, FIFO
  */
 typedef struct instruction_s
 {
@@ -45,7 +43,7 @@ typedef struct instruction_s
 
 
 /**
- * struct glob_var - golbal variables
+ * struct glob_var - globaaaal variables
  * @file: file name
  * @buff: Getline buffer
  * @tmp: Getline counter
@@ -68,44 +66,40 @@ typedef struct glob_var
 
 extern vars var;
 
-/* ================================================================= */
-/* man_file.c */
-/* ================================================================= */
+/* === */
+/* file.c */
+/* =*/
 int beg_var(vars *var);
 instruction_t *_forminstruct();
 int _invokefunc(vars *var, char *opcode);
 void _freeall(void);
 int _isanumeral(char *string);
 
-/* ================================================================= */
-/* op_funct.c */
-/* ================================================================= */
+/* ============= */
+/* ct.c */
+/* == */
 void pall(stack_t **stack, unsigned int line_number);
 void push(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
 
-/* ================================================================= */
-/* op_funct_2.c */
-/* ================================================================= */
+/* ======== */
+/* .c */
+/* ======== */
 void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
-void sub(stack_t **stack, unsigned int line_number);
-void divi(stack_t **stack, unsigned int line_number);
 
-/* ================================================================= */
-/* op_funct_3.c */
-/* ================================================================= */
+/* ======= */
+/* 3.c */
+/* ====== */
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
 
-/* ================================================================= */
-/* op_funct_4.c */
-/* ================================================================= */
-void rotl(stack_t **stack, unsigned int line_number);
-void rotr(stack_t **stack, unsigned int line_number);
+/* ======== */
+/* _4.c */
+/* ======== */
 void stack(stack_t **stack, unsigned int line_number);
 void queue(stack_t **stack, unsigned int line_number);
 

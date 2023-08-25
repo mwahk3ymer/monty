@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * stack - s
+ * stack -  o it doess
  * @stack: Double linked list
  * @line_number: File line execution
  */
@@ -14,7 +14,7 @@ void stack(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * queue - s
+ * queue - so it does
  * @stack: Double linked list
  * @line_number: File line execution
  */

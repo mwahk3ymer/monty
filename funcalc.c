@@ -1,7 +1,7 @@
 #include "monty.h"
 /**
- * pall - Print list
- * @stack: Double linked list
+ * pall - Print the list
+ * @stack: Double givenlinked list
  * @line_number: File line execution
  */
 void pall(stack_t **stack, unsigned int line_number)
@@ -19,7 +19,7 @@ void pall(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * push - Insert a new value in list
+ * push - Insert new value in list
  * @stack: Double linked list
  * @line_number: File line execution
  */

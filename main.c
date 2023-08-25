@@ -3,9 +3,9 @@
 vars var;
 
 /**
- * main - Start LIFO, FILO program
+ * main - Start my LIFO, FILO program
  * @ac: Number of arguments
- * @av: Pointer containing arguments
+ * @av: Pointer coining arguments
  * Return: 0 Success, 1 Failed
  */
 int main(int ac, char **av)

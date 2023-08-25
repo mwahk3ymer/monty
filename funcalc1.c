@@ -22,7 +22,7 @@ void swap(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * add - add the top two elements of the stack
+ * add - add wo elements of the stack
  * @stack: Double linked list
  * @line_number: File line execution
  */
