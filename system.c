@@ -56,12 +56,12 @@ instruction_t *_forminstruct()
 }
 
 /**
- * call_funct - Call Functions
+ * _invokefunc - Call Functions
  * @var: Global variables
  * @opcode: Command to execute
  * Return: None
  */
-int call_funct(vars *var, char *opcode)
+int _invokefunc(vars *var, char *opcode)
 {
 	int i;
 

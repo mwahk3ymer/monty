@@ -73,7 +73,7 @@ extern vars var;
 /* ================================================================= */
 int beg_var(vars *var);
 instruction_t *_forminstruct();
-int call_funct(vars *var, char *opcode);
+int _invokefunc(vars *var, char *opcode);
 void free_all(void);
 int _isdigit(char *string);
 
