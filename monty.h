@@ -72,7 +72,7 @@ extern vars var;
 /* man_file.c */
 /* ================================================================= */
 int beg_var(vars *var);
-instruction_t *create_instru();
+instruction_t *_forminstruct();
 int call_funct(vars *var, char *opcode);
 void free_all(void);
 int _isdigit(char *string);

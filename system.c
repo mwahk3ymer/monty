@@ -10,7 +10,7 @@ int beg_var(vars *var)
 	var->file = NULL;
 	var->buff = NULL;
 	var->tmp = 0;
-	var->dict = create_instru();
+	var->dict = _forminstruct();
 	if (var->dict == NULL)
 		return (EXIT_FAILURE);
 	var->head = NULL;
@@ -21,10 +21,10 @@ int beg_var(vars *var)
 }
 
 /**
- * create_instru - Create new functions dictionary
+ * _forminstruct - Create new functions dictionary
  * Return: Dictionary pointer
  */
-instruction_t *create_instru()
+instruction_t *_forminstruct()
 {
 	instruction_t *ptr = malloc(sizeof(instruction_t) * 18);
 
